@@ -10,6 +10,7 @@
     position: fixed;
     height: 80px;
     width: 100%;
+    padding: auto;
 }
 
 .main_header_inner{
@@ -18,10 +19,12 @@
     flex-direction: row;
     padding-left: 80px;
     padding-right: 80px;
+    vertical-align: middle;
 }
 
 .main_header_front {
     width: 474.08px;
+    vertical-align: middle;
 }
 
 .main_header_mid {
@@ -30,17 +33,6 @@
     text-align: center;
 }
 
-.main_header_last {
-    width: 474.08px;
-    background-color: red;
-}
-
-.main_home_link {
-    color: #FF385C;
-    vertical-align: middle;
-    position:absolute;
-    margin-top: 8px;
-}
 
 .main_header_mid_box {
     height: 48px;
@@ -50,42 +42,176 @@
     border: 1px solid #DDDDDD;
     border-radius: 40px;
     box-shadow: 0 1px 2px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 5%);
-    
+    display: flex;
+    flex: 0 1 auto;
+    padding-left: 8px;
 }
 
 .main_header_mid_frt {
-    background: red;
-    cursor: pointer;
-    padding: 0;
-    text-align: center;
+    background: transparent;
+    width: 98px;
+    height: 48px;
     border: 1px solid transparent;
     border-radius: 4px;
     margin: -1px;
     padding-left: 8px;
+    padding: 0;
+    text-align: center;
+    cursor: pointer;
+}
+
+.main_header_mid_frt_txt {
+    padding: 0 16px;
+    font-size: 14px;
+    line-height: 18px; 
+    /* 줄높이 */
+    font-weight: 600;
+    text-overflow: ellipsis;
+    /* 말 줄임표로 잘린 텍스트가 있다고 표시 */
+    white-space: nowrap;
+    overflow: hidden;
+    flex: 1 1 auto;
+    text-align: left;
+    cursor: pointer;
+}
+
+.barbar{
+    background-color:#DDDDDD;
+    height: 24px;
+    width: 0.5px;
+    margin-top: 10px;
 }
 
 .main_header_mid_mid{
-    background: black;
+    background: transparent;
     cursor: pointer;
     padding: 0;
-    text-align: center;
+    text-align: left;
     border: 1px solid transparent;
     border-radius: 4px;
     margin: -1px;
-    padding-left: 8px;
+    /* width: 120.99px; */
+    height: 48px;
+}
+
+.main_header_mid_mid_txt {
+    padding: 0 16px;
+    font-size: 14px;
+    line-height: 18px; 
+    /* 줄높이 */
+    font-weight: 600;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    flex: 1 1 auto;
+    text-align: left;
+    cursor: pointer;
 }
 
 .main_header_mid_last{
-    background: blue;
+    background-color: transparent;
+    height: 48px;
     cursor: pointer;
     padding: 0;
-    text-align: center;
     border: 1px solid transparent;
     border-radius: 4px;
     margin: -1px;
-    padding-left: 8px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.main_header_mid_last_txt {
+    padding: 0 16px;
+    color: #717171;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    flex: 1 1 auto;
+    cursor: pointer;
+    /* width: 105.08px; */
+   height: 18px;
+   margin-top: 13px;
 }
 
 .main_header_mid_search {
+    background-color:  #FF385C;
+    margin: 7px 7px 7px 0;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.search {
+    color: #FFFFFF;
+    height: 32px;
+    width: 32px;
+}
+
+.main_header_last {
+    height: 80px;
+    width: 474.08px;
+    display: flex;
+    flex-direction: row;
+}
+
+.main_home_link {
+    color: #FF385C;
+    vertical-align: middle;
+    position:absolute;
+    margin-top: 8px;
+}
+
+.main_header_lastlast {
+    height: 80px;
+    width: 474.08px;
+    display: flex;
+    flex-direction:row;
+}
+
+.main_header_last_frt {
+    width: 389.08px;
+    height: 42px;
+    background-color: #717171;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin-right: 8px !important;
+}
+
+.main_header_last_frt2 {
+    background-color: aqua;
+    border: 0;
+    cursor: pointer;
+    margin: 0;
+    padding: 12px;
+    height: 42px;
+}
+
+.header_lst_frt2_txt{
     display: inline-block;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 600;
+    align-items: center;
+    display: flex;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    color: #222222;
+    text-align: center;
+}
+
+.main_header_last_mid{
+    width: 40px;
+    background-color: purple;
+    height: 42px;
+}
+
+.main_header_last_scd {
+    width: 77px;
+    height: 42px;
+    background-color: #FF385C;
 }
