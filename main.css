@@ -357,8 +357,21 @@ html,body {
     justify-content: center;
 }
 
-.scd_header_scroll_next {
+.scd_header_scroll_next2 {
     right: 180px;
+    width: 36px;
+    padding-inline-end: 8px;
+    background-color: #FFFFFF;
+    justify-content: end;
+    align-items: center;
+    display: flex;
+    top: 20px;
+    bottom: 0;
+    position: absolute;
+    z-index: 3;
+}
+
+.scd_header_scroll_next {
     padding-inline-end: 8px;
     justify-content: flex-end;
     background-color: #FFFFFF;
@@ -369,7 +382,7 @@ html,body {
     position: absolute;
     z-index: 4;
     opacity: 1;
-
+    left: 2px;
 }
 
 .scd_header_scroll_next_btn{
@@ -403,7 +416,7 @@ html,body {
     height: 100%;
     grid-template-columns: 86.56px repeat(54, 56px);
     grid-template-rows: 78px;
-
+    z-index: 2;
 }
 
 .scd_hdr_in_btn {
@@ -495,11 +508,11 @@ html,body {
 }
 
 .scd_header_inner_filter{
-    /* width: 104px; */
     height: 78px;
     background-color: #FFFFFF;
     align-items: center;
     display: flex;
+    z-index: 3;
 }
 
 .scd_header_filter{
